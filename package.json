@@ -1,0 +1,19 @@
+{
+  "name": "onet",
+  "version": "0.0.1",
+  "description": "A UI components written with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xieyankun/onet.git"
+  },
+  "author": "killer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xieyankun/onet/issues"
+  },
+  "homepage": "https://github.com/xieyankun/onet#readme"
+}
