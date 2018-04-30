@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './styles/main.scss';
 import Header from './template/Header/Header'
+import Toast from './base/Toast'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         {/* <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p> */}
+        <Toast />>
       </div>
     );
   }
