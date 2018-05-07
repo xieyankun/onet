@@ -39,7 +39,7 @@ const closeToast = () => {
  * @param  {Function} callback notify消失时回调
  */
 
-export function success(text, duration, callback) {
+const show = (text, duration, status, callback) => {
   console.log('options----------------');
   console.log('text----------------', text);
   let container;
@@ -53,6 +53,8 @@ export function success(text, duration, callback) {
   const props = {
     text,
     duration,
+    status,
+    callback
   };
 
   ReactDOM.render(React.createElement(ToastContent, props), container);
@@ -73,4 +75,12 @@ export function success(text, duration, callback) {
 
   // containerList[containerId] = { container, callback, timeOutId };
   // return containerId;
+}
+
+export function success(text, duration, callback) {
+  return show(text, duration, 'success', callback);
+}
+
+export function error(text, duration, callback) {
+  return show(text, duration, 'error', callback);
 }

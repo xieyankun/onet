@@ -1,7 +1,11 @@
-import { success } from './Toast';
+import {
+  success,
+  error
+} from './Toast';
 
 export default {
   success,
+  error
 };
 
 // export default {

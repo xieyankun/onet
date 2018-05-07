@@ -1,6 +1,6 @@
 @import '../../styles/mixins';
 
-.toast{
+.onet-toast-content{
   z-index: 111;
   min-width: 240px;
   padding: 12px 16px;
@@ -9,11 +9,19 @@
   top: -20%;
   left: 50%;
   @include transform(translate(-50%));
-  background: #fbe1e1;
   box-shadow: 0 0 8px #eee;
-  color: red;
   font-size: 14px;
   @include animation(actTop 3s);
+}
+
+.onet-toast-content-success{
+  background: #f0f9eb;
+  color: #67c23a;
+}
+
+.onet-toast-content-error{
+  background: #fbe1e1;
+  color: red;
 }
 
 @include keyframes(actTop){

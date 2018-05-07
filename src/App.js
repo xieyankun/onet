@@ -6,15 +6,21 @@ import Toast from './base/Toast'
 
 class App extends Component {
 
-  show() {
-    Toast.success('0000');
+  success() {
+    Toast.success('success');
+  }
+  error() {
+    Toast.error('error');
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <button onClick={this.show}>Toast</button>
+        <button onClick={this.success}>成功</button>
+        <button onClick={this.error}>失败</button>
+        <button onClick={this.error}>异常</button>
+        <button onClick={this.error}>信息</button>
       </div>
     );
   }

@@ -4,9 +4,13 @@ import './main.scss';
 export default class ToastContent extends (PureComponent || Component) {
 
   render() {
-    const { text } = this.props;
+    const { text, status } = this.props;
     return (
-      <div className="toast">{text}</div>
+      <div className="onet-toast">
+        <div className={`onet-toast-content onet-toast-content-${status}`}>
+          {text}
+        </div>
+      </div>
     );
   }
 }
