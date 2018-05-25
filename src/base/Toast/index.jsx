@@ -1,11 +1,13 @@
 import {
   success,
-  error
+  error,
+  warning
 } from './Toast';
 
 export default {
   success,
-  error
+  error,
+  warning,
 };
 
 // export default {

@@ -12,6 +12,7 @@
   box-shadow: 0 0 8px #eee;
   font-size: 14px;
   @include animation(actTop 3s);
+  border: 1px solid #ebeef5;
 }
 
 .onet-toast-content-success{

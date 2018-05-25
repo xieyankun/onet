@@ -62,20 +62,12 @@ const show = (text, duration, status, callback) => {
   setTimeout(() => {
     closeToast();
   }, 3000);
-  
 
-  // const timeOutId = setTimeout(() => {
-  //   ReactDOM.render(
-  //     <ToastContent
-  //       text={text}
-  //     />,
-  //     container
-  //   );
-  // }, props.duration || durationDefault);
-
-  // containerList[containerId] = { container, callback, timeOutId };
-  // return containerId;
 }
+
+// export function error(text, duration, callback) {
+//   return show(text, duration, 'error', callback);
+// }
 
 export function success(text, duration, callback) {
   return show(text, duration, 'success', callback);
@@ -84,3 +76,8 @@ export function success(text, duration, callback) {
 export function error(text, duration, callback) {
   return show(text, duration, 'error', callback);
 }
+
+export function warning(text, duration, callback) {
+  return show(text, duration, 'warning', callback);
+}
+
